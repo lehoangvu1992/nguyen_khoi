@@ -20,7 +20,6 @@
 
 
   <body>
- 
     <%= render 'layouts/header'%>
 
     <div class="container", style="margin-top: 200px">
@@ -39,27 +38,45 @@
 
       <div class="row row-offcanvas row-offcanvas-right">
 
-        <div class="col-sm-3 col-md-2 sidebar", style="margin-top: 120px">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-          </ul>
+        <div class="col-sm-2 col-md-2 sidebar", style="margin-top: 120px">
+
+          <div class="nav navbar-nav navbar-right" style="height: 200px; width: 300px;margin-bottom: 100px">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: #4F4F4F">
+          <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="item active" >
+                  <%= link_to image_tag("truyendong/chitiet1.jpg"),root_path %>
+                </div>
+                <div class="item">
+                  <%= link_to image_tag("truyendong/chitiet2.jpg"),root_path %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav navbar-nav navbar-right" style="height: 200px; width: 300px;margin-bottom: 100px">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: #4F4F4F">
+          <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="item active" >
+                  <%= link_to image_tag("truyendong/chitiet1.jpg"),root_path %>
+                </div>
+                <div class="item">
+                  <%= link_to image_tag("truyendong/chitiet2.jpg"),root_path %>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="col-xs-10 col-sm-7 main">
+        <div class="col-xs-10 col-sm-8 main">
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
           </p>
@@ -108,25 +125,40 @@
             
         </div><!--/.col-xs-12.col-sm-9-->
 
-                <div class="col-sm-3 col-md-2 sidebar", style="margin-top: 120px">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-          </ul>
+        <div class="col-sm-2 col-md-2 sidebar", style="margin-top: 140px">
+
+
+              <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: #4F4F4F">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active" >
+                    <%= link_to image_tag("doluong/hinh1.jpg"),root_path %>
+                  </div>
+                  <div class="item">
+                    <%= link_to image_tag("doluong/hinh2.jpg"),root_path %>
+                  </div>
+                </div>
+              </div>
+
+              <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: #4F4F4F">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active" >
+                    <%= link_to image_tag("doluong/hinh1.jpg"),root_path %>
+                  </div>
+                  <div class="item">
+                    <%= link_to image_tag("doluong/hinh2.jpg"),root_path %>
+                  </div>
+                </div>
+              </div>
         </div>
       </div><!--/row-->
 
