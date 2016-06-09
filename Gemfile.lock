@@ -173,6 +173,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   devise
+  execjs
   jbuilder (~> 2.0)
   jquery-rails
   kaminari
@@ -187,4 +188,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.11.2
+   1.12.3

@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'homes#latest'
-  resources :posts
-  resources :my_posts, only: [:index]
+  resources :products
+  resources :my_products
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
