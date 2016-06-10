@@ -1,0 +1,38 @@
+<%= form_for @product, html: {multipart: true } do |f| %>
+
+  <div class="field-image">
+    <%= f.label :image %><br>
+    <%= f.file_field :image%>
+  </div>
+
+  <div>
+    <% if @product.errors[:name].length > 0 %>
+      <p><%= @product.errors[:name][0] %></p>
+    <% end %>
+    <%= f.label :name %>
+  </div>
+
+  <div>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <% if @product.errors[:price].length > 0 %>
+      <p><%= @product.errors[:price][0] %></p>
+    <% end %>
+    <%= f.label :price  %>
+  </div>
+
+  <div>
+    <%= f.text_area :price, size: "60x12" %>
+  </div>
+
+  <div>
+    <% if @product.new_record? %>
+      <%= f.submit "create" %>
+    <% else %>
+      <%= f.submit "update" %>
+    <%end%>
+  </div>
+      
+<% end %>
