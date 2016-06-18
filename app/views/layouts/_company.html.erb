@@ -1,19 +1,24 @@
 <ul class="dropdown-menu">
-  <li class="dropdown-submenu">
-      <a tabindex="-1" href="#"><span class="glyphicon glyphicon-triangle-right"></span>Scheneider</a>
-        <ul class="dropdown-menu">
-            <li><a tabindex="-1" href="#">Second level</a></li>
-            <li class="dropdown-submenu">
-                <a href="#">Even More..</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">3rd level</a></li>
-                  <li><a href="#">3rd level</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Second level</a></li>
-            <li><a href="#">Second level</a></li>
-        </ul>
-  </li>
+<table class="table">
+  <li><tr class="active">
+  <td><%=link_to 'SCHENEIDER', root_path%></td>
+  </tr></li>
+
+    <li><tr class="success">
+  <td><%=link_to 'HITACHI', root_path%></td>
+  </tr></li>
+
+    <li><tr class="warning">
+  <td><%=link_to 'YASKAWA', root_path%></td>
+  </tr></li>
+
+    <li><tr class="danger">
+  <td><%=link_to 'MITSUBISHI', root_path%></td>
+  </tr></li>
+      <li><tr class="info">
+  <td><%=link_to 'Scheneider', root_path%></td>
+  </tr></li>
+  </table>
 
   <li class="dropdown-submenu">
       <a tabindex="-1" href="#"><span class="glyphicon glyphicon-triangle-right"></span>HiTaChi</a>
