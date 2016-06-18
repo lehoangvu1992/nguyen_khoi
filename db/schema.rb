@@ -21,9 +21,9 @@ ActiveRecord::Schema.define(version: 20160614150108) do
 
   create_table "products", force: :cascade do |t|
     t.string   "name",               limit: 255
-    t.string   "price",              limit: 255
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
+    t.text     "schematic",          limit: 65535
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
     t.string   "user_id",            limit: 255
     t.string   "image_file_name",    limit: 255
     t.string   "image_content_type", limit: 255

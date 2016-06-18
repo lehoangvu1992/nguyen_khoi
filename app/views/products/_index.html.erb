@@ -7,14 +7,9 @@
   </div>
   
   <div>
-    <%= product.price %>
+    <%= product.schematic %>
   </div>
-
-  <div class="article-stats">
-    <span class="stats-label">Danh mục:</span> 
-    <%= product.category.name %>
-  </div>
-
+  
   <div>
     <%= link_to 'Chi tiết', product_path(product)%>
     <% if user_signed_in? %>

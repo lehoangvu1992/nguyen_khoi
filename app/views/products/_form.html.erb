@@ -22,14 +22,14 @@
   </div>
 
   <div>
-    <% if @product.errors[:price].length > 0 %>
-      <p><%= @product.errors[:price][0] %></p>
+    <% if @product.errors[:schematic].length > 0 %>
+      <p><%= @product.errors[:schematic][0] %></p>
     <% end %>
-    <%= f.label :price  %>
+    <%= f.label :schematic  %>
   </div>
 
   <div>
-    <%= f.text_area :price, size: "60x12" %>
+    <%= f.text_area :schematic, size: "60x12" %>
   </div>
 
   <div>
