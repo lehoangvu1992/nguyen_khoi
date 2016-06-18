@@ -1,24 +1,47 @@
-<% @product.each do |product|%>
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <colgroup>
+      <col class="col-xs-3"></col>
+      <col class="col-xs-5"></col>
+    </colgroup>
 
-  <h2><%= product.name %></h2>
-   
-  <div>
-   <%= image_tag product.image.url(:thumb)%>
-  </div>
-  
-  <div>
-    <%= product.schematic %>
-  </div>
-  
-  <div>
-    <%= link_to 'Chi tiết', product_path(product)%>
-    <% if user_signed_in? %>
-      <% if current_user == product.user %>
-        <div class="product-info">
-          <%= link_to 'Edit', edit_product_path(product)%>
-          <%= link_to 'delete', product_path(product), method: 'delete', data: {confirm: 'Bạn có muốn xoá bài này không?'} %>
-        </div> 
-      <%end%> 
+    <% @product.each do |product|%>
+
+      <thead>
+        <tr class="success">
+          <th><h5>Product: <%=product.name%></h5></th>
+          <th><h5>Description</h5></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+
+          <td>
+            <code> <div><%= image_tag product.image.url(:thumb)%></div></code>
+          </td>
+
+          <td>
+            <div class="article-stats">
+              <span class="stats-label">Danh mục:</span> 
+              <%= product.category.name %>
+            </div>
+
+              <div>
+                <%= link_to 'Chi tiết', product_path(product)%>
+                <% if user_signed_in? %>
+                  <% if current_user == product.user %>
+                    <div class="product-info">
+                      <%= link_to 'Edit', edit_product_path(product)%>
+                      <%= link_to 'delete', product_path(product), method: 'delete', data: {confirm: 'Bạn có muốn xoá bài này không?'} %>
+                    </div> 
+                  <%end%> 
+                <%end%>
+              </div>
+          </td>
+
+        </tr>
+      </tbody>
     <%end%>
-  </div>
-<%end%>
+  </table>
+</div>
