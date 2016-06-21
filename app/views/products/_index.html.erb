@@ -1,13 +1,12 @@
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
     <colgroup>
-      <col class="col-xs-3"></col>
-      <col class="col-xs-5"></col>
+      <col class="col-xs-4"></col>
+      <col class="col-xs-4"></col>
     </colgroup>
 
-    <% @product.each do |product|%>
-
       <thead>
+        <% @product.each do |product|%>
         <tr class="success">
           <th><h5>Product: <%=product.name%></h5></th>
           <th><h5>Description</h5></th>
