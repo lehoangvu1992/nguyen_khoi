@@ -51,69 +51,18 @@
                 <%= render 'layouts/company' %>
             </li>
 
+            <li><%=link_to 'DỊCH VỤ', services_path%></li>
 
+            <li><%=link_to 'BẢNG GIÁ', prices_path%></li>
 
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                DỊCH VỤ <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <span class="glyphicon glyphicon-triangle-right"></span> Điện tử
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-triangle-right"></span> Điện lạnh
-                </li>
-              </ul>
-            </li>
+            <li><%=link_to 'TÀI LIỆU', docs_path%></li>
 
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                BẢNG GIÁ <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <span class="glyphicon glyphicon-triangle-right"></span> Điện tử
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-triangle-right"></span> Điện lạnh
-                </li>
-              </ul>
-            </li>
+            <li><%=link_to 'LIÊN HỆ', contacts_path%></li>
 
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                TÀI LIỆU <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <span class="glyphicon glyphicon-triangle-right"></span> Điện tử
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-triangle-right"></span> Điện lạnh
-                </li>
-              </ul>
-            </li>
-
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                LIÊN HỆ <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <span class="glyphicon glyphicon-triangle-right"></span> Điện tử
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-triangle-right"></span> Điện lạnh
-                </li>
-              </ul>
-            </li>
           </ul>
 
 
-              <ul class="nav navbar-nav navbar-left">
-        
-
+          <ul class="nav navbar-nav navbar-left">
           <%if user_signed_in?%>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
