@@ -7,7 +7,7 @@
 
       <thead>
         <% @product.each do |product|%>
-        <tr class="success">
+        <tr id="table_color">
           <th><h5>Product: <%=product.name%></h5></th>
           <th><h5>Description</h5></th>
         </tr>
@@ -25,6 +25,7 @@
               <span class="stats-label">Danh mục:</span> 
               <%= product.category.name %>
             </div>
+            <div><%=product.schematic%></div>
 
               <div>
                 <%= link_to 'Chi tiết', product_path(product)%>
@@ -40,7 +41,11 @@
           </td>
 
         </tr>
+
       </tbody>
+
     <%end%>
+
   </table>
+
 </div>

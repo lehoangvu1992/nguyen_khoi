@@ -93,3 +93,48 @@ span.lineUnder1 {
     border-radius: 6px 0 6px 6px;
 }
 
+div.web5s_header {
+    position: relative;
+    z-index: 999;
+}
+#header {
+    background-color: #333;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+
+#webheader {
+    background: #302021;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#webnt_menu {
+    background: #7ab317;
+    color:white;
+    text-align:center;
+}
+
+body {
+ 
+   color: #000000;
+   font-size: 16px;
+ 
+}
+
+#slider-container {
+    max-height: 445px;
+    overflow: hidden;
+}
+
+#table_color {
+    background: #5b3671;
+    color:white;
+    text-align:center;
+}
+
+#webnk_header_top {
+    background: #232728;
+    padding-bottom: 5px;
+}

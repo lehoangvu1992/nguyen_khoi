@@ -1,29 +1,11 @@
+
 <nav class="navbar navbar-default navbar-fixed-top">
 
-      <div class="container">
-        <%= link_to image_tag("logo/MAUF10.png", width: '120', height: '60'), root_path ,{ class: "navbar-brand" }%>
-        
-      <div class="col-xs-10 col-sm-8 main">
-          <h4><i>CÔNG TY TRÁCH NHIỆM HỮU HẠN</i></h4>
-         <h2><i>NGUYÊN KHÔI</i></h2>
-      </div>
 
-        <div class="nav navbar-nav navbar-right" style="height: 100px; width: 200px">
-          <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: #4F4F4F">
-          <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-              <div class="item active" >
-                <%= link_to image_tag("truyendong/chitiet1"),root_path %>
-              </div>
-              <div class="item">
-                <%= link_to image_tag("truyendong/chitiet2"),root_path %>
-              </div>
-            </div>
-        </div>
+        <%= link_to image_tag("logo/MAUF10.png", width: '120', height: '60'), root_path ,{ class: "navbar-brand" }%>
+<div id="webheader">
+      <div class="col-xs-10 col-sm-8 main">
+          <h2>NGUYÊN KHÔI</h2>
       </div>
 
       <div class="container" style="margin-top: 10px">
@@ -36,8 +18,9 @@
           </button>
         </div>
       </div>
+</div>
 
-           
+<div id="webnt_menu">
       <strong>
         <div class="container" >
           <ul class="nav navbar-nav navbar-left">
@@ -45,19 +28,19 @@
             
 
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #fff">
                 SẢN PHẨM <span class="caret"></span>
               </a>
                 <%= render 'layouts/company' %>
             </li>
 
-            <li><%=link_to 'DỊCH VỤ', services_path%></li>
+            <li style="color: #fff"><%=link_to 'DỊCH VỤ', services_path%></li>
 
-            <li><%=link_to 'BẢNG GIÁ', prices_path%></li>
+            <li style="color: #fff"><%=link_to 'BẢNG GIÁ', prices_path%></li>
 
-            <li><%=link_to 'TÀI LIỆU', docs_path%></li>
+            <li style="color: #fff"><%=link_to 'TÀI LIỆU', docs_path%></li>
 
-            <li><%=link_to 'LIÊN HỆ', contacts_path%></li>
+            <li style="color: #fff"><%=link_to 'LIÊN HỆ', contacts_path%></li>
 
           </ul>
 
@@ -99,12 +82,12 @@
 
           <%else%>
             <div class="btn navbar-btn navbar-right">
-              <%=link_to 'Đăng Ký', new_user_registration_path, class: "btn btn-default btn-sm"%>                  
-              <%=link_to 'Đăng Nhập', new_user_session_path, class: "btn btn-success btn-sm"%>
+              <%=link_to 'Đăng Ký', new_user_registration_path%>                  
+              <%=link_to 'Đăng Nhập', new_user_session_path%>
             </div>
           <%end%>
         </ul>
-        </div>
       </strong>
+      </div>
       
 </nav>
