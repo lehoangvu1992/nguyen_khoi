@@ -138,3 +138,48 @@ body {
     background: #232728;
     padding-bottom: 5px;
 }
+
+
+
+
+.swipe:hover {
+  
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  height: 200px;
+
+}
+.swipe-wrap:hover {
+
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  
+}
+.swipe-wrap:hover > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+.p-image:hover {
+  height: 400px;
+  margin-left: 50px;
+}
+
+.hide-info {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.hide-info:hover {
+  display: block;
+}
+.p-info {
+    position: all;
+    margin-top: 20px
+    background: #fff;
+    left: 10;
+    display: table-cell;
+    overflow: hidden;
+}
