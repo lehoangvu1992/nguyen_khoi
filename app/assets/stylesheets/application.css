@@ -237,3 +237,7 @@ body {
 .line {
     background: red;
 }
+.owl {
+  width: 500px;
+  height: 333px;
+}
