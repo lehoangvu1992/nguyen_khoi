@@ -176,10 +176,52 @@ body {
   display: block;
 }
 .p-info {
-    position: all;
-    margin-top: 20px
-    background: #fff;
-    left: 10;
-    display: table-cell;
-    overflow: hidden;
+  position: all;
+  margin-top: 20px
+  background: #fff;
+  left: 10;
+  display: table-cell;
+  overflow: hidden;
+}
+.search-box {
+  width: 250px;
+  border:1px solid  red;
+  padding-left: 8px;
+  display: table;
+  border-radius: 3px;
+  position: relative;
+  margin-top: 20px;
+  color: red;
+  background-color: red;
+}
+.search-button {
+  
+  height: 32px;
+  height: 28px\9;
+  width: 32px;
+  outline: none;
+  border: none;
+  background: red;
+  background: #fff;
+
+  top: -1px;
+  top: 0\9;
+  right: -1px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-bottomleft: 0;
+  color: red;
+}
+.logo {
+    float: left;
+    display: block;
+    width: auto;
+    margin-right: 150px;
+    margin-left: 150px
+}
+.left {
+  width: 100%;
 }

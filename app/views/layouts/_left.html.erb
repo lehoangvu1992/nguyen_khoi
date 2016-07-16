@@ -1,0 +1,71 @@
+
+<ul class="nav navbar-nav navbar-left" style="color: blue">
+  <li class="left" style="color: red; font-size: 30px; font-weight: 900; ">
+  		<%=link_to 'TRANG CHỦ', root_path%>
+  </li>
+  <li class="left" class="dropdown" style="font-size: 20px; font-weight: 900; ">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+      SẢN PHẨM 
+    </a>
+      <%= render 'layouts/company' %>
+  </li>
+  <li class="left" style="font-size: 20px; font-weight: 900; "><%=link_to 'DỊCH VỤ', services_path%></li>
+  <li class="left" style="font-size: 20px; font-weight: 900; "><%=link_to 'BẢNG GIÁ', prices_path%></li>
+  <li class="left" style="font-size: 20px; font-weight: 900; "><%=link_to 'TÀI LIỆU', docs_path%></li>
+  <li class="left" style="font-size: 20px; font-weight: 900; "><%=link_to 'LIÊN HỆ', contacts_path%></li>
+</ul>
+
+
+  <ul class="nav navbar-nav navbar-left">
+  <%if user_signed_in?%>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+         <%= current_user.email %><span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <%= link_to edit_user_registration_path do %>
+            <span class="glyphicon glyphicon-user"></span> Cập nhật thông tin cá nhân
+          <% end %>
+        </li>
+
+        <li>
+          <%= link_to new_product_path do %>
+            <span class="glyphicon glyphicon-pencil"></span> Đăng bài
+          <% end %>
+        </li>
+
+        <li>
+          <%= link_to my_products_path do %>
+            <span class="glyphicon glyphicon-th-list"></span> Quản lý bài viết
+          <% end %>
+        </li>
+
+        <li role="separator" class="divider"></li>
+
+        <li>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+            <span class="glyphicon glyphicon-log-out"></span> Đăng xuất
+          <% end %>
+        </li>
+       </ul>
+    </li>
+
+  <%else%>
+    <div class="btn navbar-btn navbar-right">
+      <%=link_to 'Đăng Ký', new_user_registration_path%>                  
+      <%=link_to 'Đăng Nhập', new_user_session_path%>
+    </div>
+  <%end%>
+</ul> 
+
+<div style="margin-bottom: 10px"><%= link_to image_tag("logo/Abb.png", height: '100'),root_path ,{ class: "p-logo" }%></div>
+<div style="margin-bottom: 10px"><%= link_to image_tag("logo/Cuwt.jpg", height: '100'),root_path,{ class: "p-logo" } %></div>
+<div style="margin-bottom: 10px"><%= link_to image_tag("logo/Danfoss.png", height: '100'),root_path,{ class: "p-logo" } %></div>
+<div style="margin-bottom: 10px"><%= link_to image_tag("logo/Ebara.png", height: '100'),root_path,{ class: "p-logo" } %></div>
+<div style="margin-bottom: 10px"><%= link_to image_tag("logo/Hitachi.jpg", height: '100'),root_path,{ class: "p-logo" } %></div>
+<div style="margin-bottom: 10px"><%= link_to image_tag("logo/Hyundai.png", height: '100'),root_path,{ class: "p-logo" } %></div>
+<div style="margin-bottom: 10px"><%= link_to image_tag("logo/Mitsubishi.png", height: '100'),root_path,{ class: "p-logo" }%></div>
+<div style="margin-bottom: 10px"><%= link_to image_tag("logo/Sensors.png", height: '100'),root_path,{ class: "p-logo" } %></div>
+<div style="margin-bottom: 10px"><%= link_to image_tag("logo/Sihi.jpg", height: '100'),root_path,{ class: "p-logo" } %></div>
+<div style="margin-bottom: 10px"><%= link_to image_tag("logo/Suku.jpg", height: '100'),root_path,{ class: "p-logo" } %></div>
