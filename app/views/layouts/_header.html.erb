@@ -2,9 +2,18 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <%= link_to image_tag("logo/MAUF10.png", width: '250', height: '120'), root_path ,{ class: "logo" }%>
   <div class="search-box" style="float: left; margin-top: 40px; margin-left:100px">
-    <form id="frmSearch">
-      <input type="text" class="search-text-box keyword" placeholder="Bạn muốn tìm gì?">
+    <form method="get" action="http://www.google.com.vn/custom" target="_top">
+      <td nowrap="nowrap" valign="top" align="left" height="32">
+
+      <input type="text" name="q" size="20" maxlength="255" value=""></input>
       <button type="submit" id="btnSearch" class="submit search-button search-button-btn"><i class="glyphicon glyphicon-search"></i></button>
+      <input type="hidden" name="client" value="pub-1710694852538675"></input>
+      <input type="hidden" name="forid" value="1"></input>
+      <input type="hidden" name="ie" value="UTF-8"></input>
+      <input type="hidden" name="oe" value="UTF-8"></input>
+      <input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH :center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000F F;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;"></input>
+      <input type="hidden" name="hl" value="vi"></input>
+      </td></tr>
     </form>
   </div>
   <ul class="nav navbar-nav navbar-right" style="margin-right: 150px">
@@ -14,7 +23,7 @@
       </a>
       <ul class="dropdown-menu">
         <li>
-          <%= link_to root_path do %>
+          <%= link_to mitsubishis_path do %>
             <span class="glyphicon glyphicon-user"></span> Cập nhật thông tin cá nhân
           <% end %>
         </li>
