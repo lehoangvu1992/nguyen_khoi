@@ -23,7 +23,7 @@ span.lineUnder1 {
     border-bottom: 1px solid #ea4748;
     border-bottom-width: 5px;
     border-bottom-style: solid;
-    border-bottom-color: rgb(234, 71, 72);
+    border-bottom-color: #00cc00;
 
     padding-bottom: 2px;
     position: relative;
@@ -36,7 +36,7 @@ span.lineUnder1 {
     border-bottom: 1px solid #ea4748;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: rgb(234, 71, 72);
+    border-bottom-color: #00cc00;
     padding-bottom: 11px;
     position: relative;
     text-transform: uppercase;
@@ -137,4 +137,83 @@ body {
 #webnk_header_top {
     background: #232728;
     padding-bottom: 5px;
+}
+
+.navbar-color {
+    background-color: #c0cbff;
+    border-color: #E7E7E7;
+}
+
+.round-image-lhv {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% }
+}
+
+.round-image-avatar {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    height: 150px;
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% }
+}
+
+.round-image-50 {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    height: 550px;
+    width: 1100px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% }
+}
+
+li.panel-heading{
+
+    font-size: 1.9em; /* 40px/16=2.5em */
+
+}
+
+.round-image-sm-2 {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    height: 550px;
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% }
+}
+
+
+a.lhv {
+    font-weight: 600;
+    font-size: 1.3em; /* 40px/16=2.5em */
+    color: #ff0000;
+}
+
+a.nguyenkhoi {
+    font-weight: 600;
+    font-size: 1.3em; /* 40px/16=2.5em */
+    color: #0066ff;
+}
+
+a.header {
+    font-weight: 600;
+    font-size: 1.3em; /* 40px/16=2.5em */
 }

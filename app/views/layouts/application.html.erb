@@ -5,110 +5,171 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Công Ty TNHH Kỹ Thuật Nguyên Khôi</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
   </head>
 
-  <body>
+  <!-- Body start
+  ================================================== -->
+  <body style="background: #ffe6ff">
     <%= render 'layouts/header'%>
 
-    <div class="container", style="margin-top: 200px">
+    <!-- Column sm-2 Add row menu in left page =========================================-->
+    <div class="col-sm-2 " style="margin-top: 215px">
+      <h4><div class="lineUnder2"><span class="lineUnder1"><a class="nguyenkhoi">NGUYÊN KHÔI</a></span></div></h4>    
+      <p><span class="glyphicon glyphicon-home"></span>  Địa chỉ: 81/1 Tam Bình - Tam Phú - Thủ Đức - Tp. HCM</p>
+      <p><span class="glyphicon glyphicon-phone"></span>  Hotline: 0919043484</p>   
+      <p><span class="glyphicon glyphicon-envelope"></span>  Email: kythuatnguyenkhoi@gmail.com </p>
+
+
+
+     <!-- show slide Image ====================================================-->
+      <div class="container-fluit" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        </ol>
+
+        <!-- Wrapper for slides ===================================================-->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <li class="round-image-sm-2"><%= link_to image_tag("background/g1.jpg", width: '1100', height: '550')%></li>
+          </div>
+
+          <div class="item">
+            <li class="round-image-sm-2"><%= link_to image_tag("background/g2.jpg", width: '1100', height: '600')%></li>
+          </div>
+
+          <div class="item">
+            <li class="round-image-sm-2"><%= link_to image_tag("background/g3.jpg", width: '1100', height: '600')%></li>
+          </div>
+
+          <div class="item">
+            <li class="round-image-sm-2"><%= link_to image_tag("background/g4.jpg", width: '1100', height: '600')%></li>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add row menu 
+      =======================================================================-->
+      <div class="panel panel-success">
+        <!-- Default panel contents -->
+        <div class="panel-heading" size="35">SẢN PHẨM</div>
+
+        <!-- List group -->
+        <ul class="list-group">
+          <li class="list-group-item">SON MÔI</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+    </div><!-- End Column sm-2 ==============================================================-->
+    
+    <!-- Column sm-8  =========================================-->
+    <div class="col-sm-8", style="margin-top: 200px">
       <div>
-         <h4><i>Lời Chào!</i></h4>
-            <p><i>
+         <h2>Welcome!</h2>
+            <h4><p>
               Công ty NGUYÊN KHÔI xin chân thành gửi đến quý khách hàng lời chào trân trọng
               nhất, Công ty Nguyên Khôi là nhà phân phối các sản phẩm điện công nghiệp, tự động
-              hóa và Truyền động công nghiệp của các hãng như: Schneider, ABB, SIEMENS, FLENDER
-              SEW, Danfoss, YASKAWA, HITACHI, MITSUBISHI, Fuji Electric, UWT, GmbH, SUKU GmbH 
+              hóa và Truyền động công nghiệp của các hãng như: SCHNEIDER, ABB, SIEMENS, FLENDER
+              SEW, DANFOSS, YASKAWA, HITACHI, MITSUBISHI, Fuji Electric, UWT, GmbH, SUKU GmbH 
               PR Electronics, ... Ngoài ra chúng tôi còn nhà tích hợp, thi công lắp đặt các 
               hệ thống Tủ điện điều khiển, tủ phân phối, báo cháy,... Với đội ngũ dày dạng 
               kinh nghiệm, Chúng tôi chắc chắn sẽ mang đến cho Quý khách hàng dịch vụ tốt nhất.
-            </i></p>
+            </p></h4>
       </div>
 
-      <div class="row row-offcanvas row-offcanvas-right">
-        <div class="col-sm-2 col-md-2 sidebar", style="margin-top: 120px">
-          <div class="nav navbar-nav navbar-right" style="height: 200px; width: 300px;margin-bottom: 100px">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: #4F4F4F">
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-              </ol>
-              <div class="carousel-inner" role="listbox">
-                <div class="item active" >
-                  <%= link_to image_tag("truyendong/chitiet1.jpg"),root_path %>
-                </div>
-                <div class="item">
-                  <%= link_to image_tag("truyendong/chitiet2.jpg"),root_path %>
-                </div>
-              </div>
-            </div>
+      <!-- show slide Image ====================================================-->
+      <div class="container-fluit" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        </ol>
+
+        <!-- Wrapper for slides ===================================================-->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <li class="round-image-50"><%= link_to image_tag("background/g1.jpg", width: '1100', height: '550')%></li>
           </div>
 
-          <div class="nav navbar-nav navbar-right" style="height: 200px; width: 300px;margin-bottom: 100px">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: #4F4F4F">
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-              </ol>
-              <div class="carousel-inner" role="listbox">
-                <div class="item active" >
-                  <%= link_to image_tag("truyendong/chitiet1.jpg"),root_path %>
-                </div>
-                <div class="item">
-                  <%= link_to image_tag("truyendong/chitiet2.jpg"),root_path %>
-                </div>
-              </div>
-            </div>
+          <div class="item">
+            <li class="round-image-50"><%= link_to image_tag("background/g2.jpg", width: '1100', height: '600')%></li>
+          </div>
+
+          <div class="item">
+            <li class="round-image-50"><%= link_to image_tag("background/g3.jpg", width: '1100', height: '600')%></li>
+          </div>
+
+          <div class="item">
+            <li class="round-image-50"><%= link_to image_tag("background/g4.jpg", width: '1100', height: '600')%></li>
           </div>
         </div>
 
-        <div class="col-md-8">
-            <%= yield %>
-         </div>
+      </div>
+    </div>
 
-        <div class="col-sm-2 col-md-2 sidebar", style="margin-top: 140px">
-          <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: #4F4F4F">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-              <div class="item active" >
-                <%= link_to image_tag("doluong/hinh1.jpg"),root_path %>
-              </div>
-              <div class="item">
-                <%= link_to image_tag("doluong/hinh2.jpg"),root_path %>
-              </div>
-            </div>
+
+    <!-- col-sme-2 left
+    ================================================== -->
+    <div class="col-sm-2" style="margin-top: 370px">
+
+     <!-- show slide Image ====================================================-->
+      <div class="container-fluit" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        </ol>
+
+        <!-- Wrapper for slides ===================================================-->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <li class="round-image-sm-2"><%= link_to image_tag("background/g1.jpg", width: '1100', height: '400')%></li>
           </div>
 
-          <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: #4F4F4F">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-              <div class="item active" >
-                <%= link_to image_tag("doluong/hinh1.jpg"),root_path %>
-              </div>
-              <div class="item">
-                <%= link_to image_tag("doluong/hinh2.jpg"),root_path %>
-              </div>
-            </div>
+          <div class="item">
+            <li class="round-image-sm-2"><%= link_to image_tag("background/g2.jpg", width: '1100', height: '600')%></li>
+          </div>
+
+          <div class="item">
+            <li class="round-image-sm-2"><%= link_to image_tag("background/g3.jpg", width: '1100', height: '600')%></li>
+          </div>
+
+          <div class="item">
+            <li class="round-image-sm-2"><%= link_to image_tag("background/g4.jpg", width: '1100', height: '600')%></li>
           </div>
         </div>
-      </div><!--/row-->
+      </div>
+    </div>
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <div class="col-sm-8">
+      <h4><div class="lineUnder2"><span class="lineUnder1"><a class="lhv">SẢN PHẨM</a></span></div></h4>   
+      <%= yield %>
+    </div>
+
+
+ </div><!--/row-->
 
     <%=render 'layouts/footer'%>
     <!-- Bootstrap core JavaScript
