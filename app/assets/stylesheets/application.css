@@ -193,7 +193,7 @@ li.panel-heading{
     background-color: white;
     border: 1px solid #d9d9d9;
     border-radius: 25px;
-    height: 550px;
+    height: 270px;
     width: 250px;
     overflow: hidden;
     text-align: center;
@@ -216,4 +216,15 @@ a.nguyenkhoi {
 a.header {
     font-weight: 600;
     font-size: 1.3em; /* 40px/16=2.5em */
+}
+
+.round-image-sm-2-long {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    height: 500px;
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% }
 }
