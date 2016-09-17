@@ -23,7 +23,7 @@ span.lineUnder1 {
     border-bottom: 1px solid #ea4748;
     border-bottom-width: 5px;
     border-bottom-style: solid;
-    border-bottom-color: #00cc00;
+    border-bottom-color: #ff0000;
 
     padding-bottom: 2px;
     position: relative;
@@ -36,7 +36,7 @@ span.lineUnder1 {
     border-bottom: 1px solid #ea4748;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: #00cc00;
+    border-bottom-color: #ff0000;
     padding-bottom: 11px;
     position: relative;
     text-transform: uppercase;
@@ -140,7 +140,7 @@ body {
 }
 
 .navbar-color {
-    background-color: #c0cbff;
+    background-color: #adadad;
     border-color: #E7E7E7;
 }
 
@@ -150,8 +150,8 @@ body {
     border-radius: 25px;
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
-    height: 150px;
-    width: 300px;
+    height: 100px;
+    width: 150px;
     overflow: hidden;
     text-align: center;
     img { width: 100% }
@@ -163,7 +163,7 @@ body {
     border-radius: 25px;
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
-    height: 150px;
+    height: 120px;
     width: 300px;
     overflow: hidden;
     text-align: center;
@@ -193,7 +193,7 @@ li.panel-heading{
     background-color: white;
     border: 1px solid #d9d9d9;
     border-radius: 25px;
-    height: 270px;
+    height: 250px;
     width: 250px;
     overflow: hidden;
     text-align: center;
@@ -210,7 +210,7 @@ a.lhv {
 a.nguyenkhoi {
     font-weight: 600;
     font-size: 1.3em; /* 40px/16=2.5em */
-    color: #0066ff;
+    color: #0000ff;
 }
 
 a.header {
@@ -227,4 +227,10 @@ a.header {
     overflow: hidden;
     text-align: center;
     img { width: 100% }
+}
+
+li.menu {
+    font-weight: 600;
+    font-size: 1.3em; /* 40px/16=2.5em */
+
 }

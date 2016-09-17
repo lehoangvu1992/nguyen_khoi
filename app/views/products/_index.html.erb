@@ -1,51 +1,16 @@
-<div class="table-responsive">
-  <table class="table table-bordered table-striped">
-    <colgroup>
-      <col class="col-xs-4"></col>
-      <col class="col-xs-4"></col>
-    </colgroup>
+<%Product.find_in_batches do |group| %>
+    <div class='row'>
+        <% group.each do |product| %>
+        <div class='col-md-4'>
+            <table class="w3-table w3-border">
+                <tr><th><%=product.name%></th></tr>
+                <tr><td><%= image_tag product.image.url(:thumb)%></td></tr>
+            </table>
+        </div>
+        <% end %>
+    </div>
+<% end %>
 
-      <thead>
-        <% @product.each do |product|%>
-        <tr id="table_color">
-          <th><h5>Product: <%=product.name%></h5></th>
-          <th><h5>Description</h5></th>
-        </tr>
-      </thead>
 
-      <tbody>
-        <tr>
 
-          <td>
-            <code> <div><%= image_tag product.image.url(:thumb)%></div></code>
-          </td>
 
-          <td>
-            <div class="article-stats">
-              <span class="stats-label">Danh mục:</span> 
-              <%= product.category.name %>
-            </div>
-            <div><%=product.schematic%></div>
-
-              <div>
-                <%= link_to 'Chi tiết', product_path(product)%>
-                <% if user_signed_in? %>
-                  <% if current_user == product.user %>
-                    <div class="product-info">
-                      <%= link_to 'Edit', edit_product_path(product)%>
-                      <%= link_to 'delete', product_path(product), method: 'delete', data: {confirm: 'Bạn có muốn xoá bài này không?'} %>
-                    </div> 
-                  <%end%> 
-                <%end%>
-              </div>
-          </td>
-
-        </tr>
-
-      </tbody>
-
-    <%end%>
-
-  </table>
-
-</div>
