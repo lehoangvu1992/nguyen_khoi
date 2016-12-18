@@ -4,13 +4,9 @@
         <div class='col-md-4'>
             <table class="w3-table w3-border">
                 <tr><th><%=product.name%></th></tr>
-                <tr><td><%= image_tag product.image.url(:thumb)%></td></tr>
+                <tr><td class="round-image-sm-2"><%= image_tag product.image.url(:thumb)%></td></tr>
             </table>
         </div>
         <% end %>
     </div>
 <% end %>
-
-
-
-
