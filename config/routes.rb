@@ -3,15 +3,10 @@ Rails.application.routes.draw do
   root 'homes#latest'
   resources :products
   resources :my_products
-  resources :scheneiders
-  resources :hitachis
-  resources :yaskawas
-  resources :mitsubishis
+  resources :locbinhs
+  resources :thiemthus
   resources :docs
-  resources :prices
   resources :contacts
-  resources :services
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
