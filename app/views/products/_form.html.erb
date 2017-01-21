@@ -1,48 +1,50 @@
 <%= form_for @product, html: {multipart: true } do |f| %>
 
-  <div class="field-image">
-    <%= f.label :image %><br>
-    <%= f.file_field :image%>
-  </div>
-
-  <div class="form-group">
-    <%= f.label :category, 'Danh mục' %>
-    <%= f.select :category_id, Category.all.map{ |c| [c.name, c.id] }, {}, class: 'form-control' %>
-  </div>
+    <div class="field-image">
+        <%= f.label :image %><br>
+        <%= f.file_field :image%>
+    </div>
 
     <div class="form-group">
-    <%= f.label :type, 'type' %>
-    <%= f.select :type_id, Type.all.map{ |c| [c.name, c.id] }, {}, class: 'form-control' %>
-  </div>
+        <%= f.label :category, 'Danh mục' %>
+        <%= f.select :category_id, Category.all.map{ |c| [c.name, c.id] }, {}, class: 'form-control' %>
+    </div>
 
-  <div>
-    <% if @product.errors[:name].length > 0 %>
-      <p><%= @product.errors[:name][0] %></p>
-    <% end %>
-    <%= f.label :name %>
-  </div>
+    <div class="form-group">
+        <%= f.label :type, 'type' %>
+        <%= f.select :type_id, Type.all.map{ |c| [c.name, c.id] }, {}, class: 'form-control' %>
+    </div>
 
-  <div>
-    <%= f.text_field :name %>
-  </div>
+    <div>
+        <% if @product.errors[:name].length > 0 %>
+            <p><%= @product.errors[:name][0] %></p>
+        <% end %>
 
-  <div>
-    <% if @product.errors[:schematic].length > 0 %>
-      <p><%= @product.errors[:schematic][0] %></p>
-    <% end %>
-    <%= f.label :schematic  %>
-  </div>
+        <%= f.label :name %>
+    </div>
 
-  <div>
-    <%= f.text_area :schematic, size: "60x12" %>
-  </div>
+    <div>
+        <%= f.text_field :name %>
+    </div>
 
-  <div>
-    <% if @product.new_record? %>
-      <%= f.submit "create" %>
-    <% else %>
-      <%= f.submit "update" %>
-    <%end%>
-  </div>
-      
+    <div>
+        <% if @product.errors[:schematic].length > 0 %>
+            <p><%= @product.errors[:schematic][0] %></p>
+        <% end %>
+
+        <%= f.label :schematic  %>
+    </div>
+
+    <div>
+        <%= f.text_area :schematic, size: "60x12" %>
+    </div>
+
+    <div>
+        <% if @product.new_record? %>
+            <%= f.submit "create" %>
+        <% else %>
+            <%= f.submit "update" %>
+        <%end%>
+    </div>
+    
 <% end %>

@@ -1,254 +1,185 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Mỹ Nghệ Lê Kim</title>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mỹ Nghệ Lê Kim</title>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    </head>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-  </head>
+    <body style="background: #f7e9dd">
 
-  <!-- Body start
-  ================================================== -->
-  <body style="background: #f7e9dd">
-    <%= render 'layouts/header'%>
+        <%= render 'layouts/header'%>
 
-    <!-- Column sm-2 Add row menu in left page =========================================-->
-    <div class="col-sm-2 " style="margin-top: 50px">
-      <h4><div class="lineUnder2"><span class="lineUnder1"><a class="nguyenkhoi">LÊ KIM</a></span></div></h4>    
-      <p><span class="glyphicon glyphicon-home"></span>  Địa chỉ: Xuân Mỹ - Hòa Mỹ Đông - Tây Hòa - Phú Yên</p>
-      <p><span class="glyphicon glyphicon-phone"></span>  Hotline: 0969980331</p>   
-      <p><span class="glyphicon glyphicon-envelope"></span>  Email: mynghelekim@gmail.com </p>
+        <div class="col-sm-2 " style="margin-top: 50px">
+            <h4><div class="lineUnder2"><span class="lineUnder1"><a class="nguyenkhoi">LÊ KIM</a></span></div></h4>    
+            <p><span class="glyphicon glyphicon-home"></span>  Địa chỉ: Xuân Mỹ - Hòa Mỹ Đông - Tây Hòa - Phú Yên</p>
+            <p><span class="glyphicon glyphicon-phone"></span>  Hotline: 0969980331</p>   
+            <p><span class="glyphicon glyphicon-envelope"></span>  Email: mynghelekim@gmail.com </p>
 
+            <div class="container-fluit" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                </ol>
 
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/1.jpg", width: '270', height: '250')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/2.jpg", width: '270', height: '250')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/3.jpg", width: '270', height: '250')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/4.png", width: '270', height: '250')%></li>
+                    </div>
+                </div>
+            </div>
 
-     <!-- show slide Image ====================================================-->
-      <div class="container-fluit" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <br></br>
+            <div class="container-fluit" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                </ol>
 
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/5.jpg", width: '270', height: '250')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/6.jpg", width: '270', height: '250')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/7.jpg", width: '270', height: '250')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/8.jpg", width: '270', height: '250')%></li>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Wrapper for slides ===================================================-->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/1.jpg", width: '270', height: '250')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/2.jpg", width: '270', height: '250')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/3.jpg", width: '270', height: '250')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/4.png", width: '270', height: '250')%></li>
-          </div>
-        </div>
-      </div>
-
-      <!-- show slide Image ====================================================-->
-      <br></br>
-      <div class="container-fluit" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        </ol>
-
-        <!-- Wrapper for slides ===================================================-->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/5.jpg", width: '270', height: '250')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/6.jpg", width: '270', height: '250')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/7.jpg", width: '270', height: '250')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/8.jpg", width: '270', height: '250')%></li>
-          </div>
-        </div>
-      </div>
-
-      <!-- Add row menu 
-      =======================================================================-->
-      <br></br>
-      <div class="panel panel-success">
-        <!-- Default panel contents -->
-        <div class="panel-heading" size="35">SẢN PHẨM</div>
-
-        <!-- List group -->
-        <ul class="list-group">
-          <li class="list-group-item">LỘC BÌNH</li>
-          <li class="list-group-item">THIỀM THỪ</li>
-        </ul>
-      </div>
-    </div><!-- End Column sm-2 ==============================================================-->
+            <br></br>
+            <div class="panel panel-success">
+                <div class="panel-heading" size="35">SẢN PHẨM</div>
+                <ul class="list-group">
+                    <li class="list-group-item">LỘC BÌNH</li>
+                    <li class="list-group-item">THIỀM THỪ</li>
+                </ul>
+            </div>
+        </div><!-- End column sm-2 -->
     
-    <!-- Column sm-8  =========================================-->
-    <div class="col-sm-8", style="margin-top: 40px">
-      <div>
-         <h2>Welcome!</h2>
-            <h4><p>
-            Trong Phong thủy, gỗ tiêu biểu cho hành Mộc. Hành Mộc tượng trưng cho mùa xuân, cho phương vị Đông và Đông Nam. So với các hành khác, hành Mộc chủ về Nhân dễ tạo không khí bình yên, hài hòa. Trong tương tác về Ngũ hành, hành Mộc làm giảm bớt tác động của hành Kim và hành Thổ tạo sự cân bằng cho ngôi nhà. Dùng những vật liệu Mộc không những giúp môi trường sống thân thiện mộc mạc mà còn tạo ra được bầu khí ấm cúng hơn cho không gian sống.
-            </p></h4>
-      </div>
+        <div class="col-sm-8", style="margin-top: 40px">
+            <div>
+                <h2>Welcome!</h2>
+                <h4><p>Trong Phong thủy, gỗ tiêu biểu cho hành Mộc. Hành Mộc tượng trưng cho mùa xuân, cho phương vị Đông và Đông Nam. So với các hành khác, hành Mộc chủ về Nhân dễ tạo không khí bình yên, hài hòa. Trong tương tác về Ngũ hành, hành Mộc làm giảm bớt tác động của hành Kim và hành Thổ tạo sự cân bằng cho ngôi nhà. Dùng những vật liệu Mộc không những giúp môi trường sống thân thiện mộc mạc mà còn tạo ra được bầu khí ấm cúng hơn cho không gian sống.</p></h4>
+            </div>
 
-      <!-- show slide Image ====================================================-->
-      <div class="container-fluit" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="container-fluit" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                </ol>
 
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        </ol>
-
-        <!-- Wrapper for slides ===================================================-->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <li class="round-image-50"><%= link_to image_tag("background/g1.jpg", width: '1100', height: '550')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-50"><%= link_to image_tag("background/g2.jpg", width: '1100', height: '600')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-50"><%= link_to image_tag("background/g3.jpg", width: '1100', height: '600')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-50"><%= link_to image_tag("background/g4.jpg", width: '1100', height: '600')%></li>
-          </div>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <li class="round-image-50"><%= link_to image_tag("background/g1.jpg", width: '1100', height: '550')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-50"><%= link_to image_tag("background/g2.jpg", width: '1100', height: '600')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-50"><%= link_to image_tag("background/g3.jpg", width: '1100', height: '600')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-50"><%= link_to image_tag("background/g4.jpg", width: '1100', height: '600')%></li>
+                    </div>
+                </div>
+            </div>
         </div>
 
-      </div>
-    </div>
+        <div class="col-sm-2" style="margin-top: 210px">
+            <div class="container-fluit" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                </ol>
 
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/9.jpg", width: '270', height: '250')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/10.jpg", width: '270', height: '250')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/11.jpg", width: '270', height: '250')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/12.jpg", width: '270', height: '250')%></li>
+                    </div>
+                </div>
+            </div>
 
-    <!-- col-sme-2 left
-    ================================================== -->
-    <div class="col-sm-2" style="margin-top: 210px">
+            <br></br>
+            <div class="container-fluit" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                </ol>
 
-     <!-- show slide Image ====================================================-->
-      <div class="container-fluit" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        </ol>
-
-        <!-- Wrapper for slides ===================================================-->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/9.jpg", width: '270', height: '250')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/10.jpg", width: '270', height: '250')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/11.jpg", width: '270', height: '250')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/12.jpg", width: '270', height: '250')%></li>
-          </div>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/13.jpg", width: '270', height: '250')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/14.jpg", width: '270', height: '250')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/15.jpg", width: '270', height: '250')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-sm-2"><%= link_to image_tag("device/16.jpg", width: '270', height: '250')%></li>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- show slide Image ====================================================-->
-      <br></br>
-      <div class="container-fluit" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        </ol>
-
-        <!-- Wrapper for slides ===================================================-->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/13.jpg", width: '270', height: '250')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/14.jpg", width: '270', height: '250')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/15.jpg", width: '270', height: '250')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-sm-2"><%= link_to image_tag("device/16.jpg", width: '270', height: '250')%></li>
-          </div>
+        <div class="col-sm-8"><h4><div class="lineUnder2"><span class="lineUnder1"><a class="lhv">SẢN PHẨM</a></span></div></h4>   
+            <%= yield %>
         </div>
-      </div>
-    </div>
 
+        <div class="col-sm-2">
+            <br></br>
+            <div class="container-fluit" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <li class="round-image-sm-2-long"><%= link_to image_tag("doluong/hinh1.jpg", width: '250', height: '500')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-sm-2-long"><%= link_to image_tag("doluong/hinh2.jpg", width: '250', height: '500')%></li>
+                    </div>
+                    <div class="item">
+                        <li class="round-image-sm-2-long"><%= link_to image_tag("doluong/hinh3.jpg", width: '250', height: '500')%></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%=render 'layouts/footer'%>
         <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <div class="col-sm-8"><h4><div class="lineUnder2"><span class="lineUnder1"><a class="lhv">SẢN PHẨM</a></span></div></h4>   
-      <%= yield %>
-    </div>
-
-    <!-- col-sme-2 left
-    ================================================== -->
-    <div class="col-sm-2">
-
-     <!-- show slide Image ====================================================-->
-     <br></br>
-      <div class="container-fluit" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        </ol>
-
-        <!-- Wrapper for slides ===================================================-->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <li class="round-image-sm-2-long"><%= link_to image_tag("doluong/hinh1.jpg", width: '250', height: '500')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-sm-2-long"><%= link_to image_tag("doluong/hinh2.jpg", width: '250', height: '500')%></li>
-          </div>
-
-          <div class="item">
-            <li class="round-image-sm-2-long"><%= link_to image_tag("doluong/hinh3.jpg", width: '250', height: '500')%></li>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
- </div><!--/row-->
-
-    <%=render 'layouts/footer'%>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  </body>
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    </body>
 </html>
